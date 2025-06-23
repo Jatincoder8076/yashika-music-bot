@@ -25,7 +25,7 @@ async def about_description(update: Update, context: CallbackContext):
        "• Fun Games (Tic Tac Toe, One Word)\n" \
        "• 24/7 Hosting, Lag Free\n" \
        "• Group Commands: /gban /gbroadcast\n" \
-       "• Built with 💖 by @myself_jatin""
+       "• Built with 💖 by @myself_jatin"
     await query.edit_message_text(desc, parse_mode="Markdown")
 
 # Admin Commands
