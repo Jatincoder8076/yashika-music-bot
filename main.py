@@ -5,7 +5,8 @@ from oneword import oneword, check_word
 from music import music
 from yashika_love import love_yashika
 from about import about_callback, about_description, gban, gunban, gbroadcast
-
+from keep_alive import keep_alive
+keep_alive()
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user = update.effective_user.first_name
     keyboard = [
