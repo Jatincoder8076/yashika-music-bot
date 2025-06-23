@@ -57,7 +57,4 @@ async def gbroadcast(update: Update, context: CallbackContext):
         await update.message.reply_text("❌ You are not authorized to use this.")
         return
     msg = ' '.join(context.args)
-    # Placeholder broadcast simulation
-    await update.message.reply_text(f"📣 Broadcasting to all groups:
-
-{msg}")
+    await update.message.reply_text(f"📣 Broadcasting to all groups:\n\n{msg}")
