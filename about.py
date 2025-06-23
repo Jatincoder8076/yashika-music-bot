@@ -38,9 +38,9 @@ async def gban(update: Update, context: CallbackContext):
         return
     user_id = int(context.args[0])
     reason = ' '.join(context.args[1:])
-    # Placeholder DB action
-    await update.message.reply_text(f"✅ User {user_id} has been globally banned.
-Reason: {reason}")
+    await update.message.reply_text(
+        f"✅ User {user_id} has been globally banned.\nReason: {reason}"
+    )
 
 async def gunban(update: Update, context: CallbackContext):
     if update.effective_user.id != OWNER_ID:
