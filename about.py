@@ -20,13 +20,12 @@ async def about_callback(update: Update, context: CallbackContext):
 async def about_description(update: Update, context: CallbackContext):
     query = update.callback_query
     await query.answer()
-    desc = "🎶 *Bot Features:*
-
-"            "• Music Search (YouTube)
-"            "• Fun Games (Tic Tac Toe, One Word)
-"            "• 24/7 Hosting, Lag Free
-"            "• Group Commands: /gban /gbroadcast
-"            "• Built with 💖 by @myself_jatin"
+    desc = "🎶 *Bot Features:*\n\n" \
+       "• Music Search (YouTube)\n" \
+       "• Fun Games (Tic Tac Toe, One Word)\n" \
+       "• 24/7 Hosting, Lag Free\n" \
+       "• Group Commands: /gban /gbroadcast\n" \
+       "• Built with 💖 by @myself_jatin""
     await query.edit_message_text(desc, parse_mode="Markdown")
 
 # Admin Commands
